@@ -1,0 +1,100 @@
+.what-cars {
+  padding: 100px 10px;
+  &__title {
+    text-align: center;
+  }
+
+  &__subtitle {
+    display: block;
+    transition: color 1s ease-in-out;
+  }
+
+  &__content {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__wrapper-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: center;
+  }
+
+  &__box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 16px;
+    border: 2px solid #ff99002b;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      border: 2px solid #ff990056;
+    }
+  }
+
+  &__svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__wrapper-img {
+    display: flex;
+    flex: 1;
+    place-content: center;
+  }
+
+  &__img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('~/images/whatCars.png') center no-repeat;
+      background-size: cover;
+      filter: blur(10px);
+      z-index: -1;
+    }
+
+    &__wrapper-img {
+      display: none;
+    }
+
+    &__box {
+      background-color: rgba(#000000, 0.7);
+      border: none;
+
+      &:hover {
+        border: none;
+        .what-cars {
+          &__subtitle {
+            color: #f90;
+          }
+        }
+      }
+    }
+
+    &__svg,
+    &__desc {
+      color: #fff;
+    }
+
+    &__subtitle {
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+  }
+}

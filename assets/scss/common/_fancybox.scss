@@ -1,0 +1,17 @@
+.fancybox {
+  &__backdrop {
+    backdrop-filter: blur(4px);
+
+    --fancybox-bg: rgb(0 0 0 / 50%);
+  }
+}
+.is-close-btn {
+  top: 5px !important;
+  right: 5px !important;
+  color: #dd7901;
+  background-color: transparent;
+
+  &:hover {
+    background-color: #dd7901;
+  }
+}

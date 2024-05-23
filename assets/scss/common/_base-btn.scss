@@ -1,0 +1,21 @@
+.base-btn {
+  display: block;
+  width: 100%;
+  background-color: rgb(0, 8, 255);
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: rgb(37, 44, 249);
+  }
+
+  &:disabled {
+    background-color: #929292;
+    cursor: not-allowed;
+  }
+}

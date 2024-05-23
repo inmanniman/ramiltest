@@ -1,0 +1,15 @@
+.base-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  color: #000000;
+  font-size: 16px;
+  background-color: #eaeaea;
+  border: 0;
+  border-radius: 16px;
+  outline: none;
+
+  &::placeholder {
+    color: #000000;
+  }
+}

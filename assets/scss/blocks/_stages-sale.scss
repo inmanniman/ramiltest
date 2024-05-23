@@ -1,0 +1,65 @@
+$bg-color: #e0e0e0;
+$primary-color: #4c5760;
+$secondary-color: #a3b1bf;
+$accent-color: #e07a5f;
+$text-color: #333;
+$white: #fff;
+
+.stages-sale {
+  background-color: $bg-color;
+  color: $text-color;
+  text-align: center;
+  padding: 40px 0;
+
+  &__title {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: $primary-color;
+  }
+
+  &__wrapper-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  &__box {
+    background-color: $white;
+    color: $text-color;
+    border: 1px solid $secondary-color;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      border-color: $accent-color;
+    }
+  }
+
+  &__num-box {
+    font-size: 20px;
+    font-weight: bold;
+    color: $accent-color;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: $primary-color;
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    color: $text-color;
+  }
+}

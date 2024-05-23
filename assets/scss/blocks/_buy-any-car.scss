@@ -1,0 +1,96 @@
+.buy-any-car {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 100px 10px 0;
+
+  &__title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    display: block;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+  }
+  &__wrapper-text {
+    flex: 1;
+    width: 100%;
+  }
+  &__wrapper-img {
+    display: flex;
+    flex: 1;
+    background-color: #333;
+    border-radius: 40px;
+    padding: 60px 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__img {
+    display: block;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__btn {
+    padding: 20px 10px;
+    max-width: 334px;
+  }
+
+  &__wrapper-btn {
+    display: flex;
+    margin-top: 16px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 120px;
+    &__wrapper-text {
+      position: relative;
+      background-color: #333;
+      border-radius: 16px;
+      padding: 20px 10px;
+
+      &::after {
+        position: absolute;
+        display: block;
+        top: -42px;
+        right: 20px;
+        width: 100px;
+        height: 77px;
+        background: url('~/images/forSale.png') center no-repeat;
+        background-size: 100% 100%;
+        content: '';
+      }
+    }
+
+    &__title {
+      color: #fff;
+      font-size: 26px;
+    }
+
+    &__description {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    &__btn {
+      font-size: 16px;
+      padding: 14px 16px;
+    }
+
+    &__wrapper-img {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    &__btn {
+      padding: 14px 6px;
+    }
+  }
+}

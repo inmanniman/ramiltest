@@ -1,0 +1,120 @@
+.modal-window {
+  &__wrapper-form {
+    display: none;
+    border-radius: 22px;
+  }
+
+  &__form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+  }
+  &__label {
+    display: block;
+    font-size: 20px;
+  }
+  &__wrapper-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__check-number {
+    width: 8px;
+    background-color: unset;
+    border: 0;
+
+    &_result {
+      border: 1px solid #000;
+      background-color: #fff;
+      width: 77px;
+      border-radius: 16px;
+      padding: 5px 0 5px 5px;
+
+      &::placeholder {
+        font-size: 10px;
+        font-weight: 700;
+        padding: 5px 0 5px 5px;
+      }
+    }
+  }
+
+  &__check-btn {
+    display: block;
+    max-width: 110px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #01a812;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: #019410;
+    }
+  }
+
+  &__wrapper-message-form {
+    flex: 1;
+    display: none;
+    max-width: 420px;
+    padding-right: 29px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__message-form {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: block;
+      right: -30px;
+      top: 0px;
+      width: 20px;
+      height: 20px;
+      background: url(/assets/images/green-checkbox.svg?fb117a8…) center
+        no-repeat;
+      background-size: 100% 100%;
+      content: '';
+    }
+  }
+
+  &__wrapper-captcha {
+    position: relative;
+    display: block;
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 16px;
+    max-width: 184px;
+
+    &::after {
+      position: absolute;
+      display: block;
+      top: 10px;
+      right: 10px;
+      border-radius: 5px;
+      width: 5px;
+      height: 5px;
+      background-color: rgb(5, 191, 5);
+      animation: blink 2s infinite;
+      content: '';
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__title {
+      font-size: 24px;
+    }
+  }
+}

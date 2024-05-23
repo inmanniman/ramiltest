@@ -1,0 +1,21 @@
+.idea
+node_modules
+
+#compiling files
+public/mix-manifest.json
+
+/public/cache/*
+!/public/cache/.htaccess
+/public/return/*
+/public/tmp/*
+/public/userfls/*
+/public/config.php
+/public/.htaccess
+/public/robots.txt
+/public/custom/vendor/connect.php
+
+access_log*
+error_log*
+*.DS_Store
+
+.env
